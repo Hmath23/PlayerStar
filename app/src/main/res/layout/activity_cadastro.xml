@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro"
+    android:background="@color/black">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="37dp">
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLogin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Digite seu Nome"
+            android:textColorHint="@color/gold2"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextNome"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Digite sua Idade"
+            android:textColorHint="@color/gold2"
+            android:inputType="text|number" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextIdade"
+            android:layout_alignStart="@id/editTextNome"
+            android:layout_alignLeft="@id/editTextNome"
+            android:textColor="@color/gold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Digite seu Email"
+            android:textColorHint="@color/gold2"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextEsportes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Digite os esportes que pratica"
+            android:textColorHint="@color/gold2"
+            android:inputType="textNoSuggestions"/>
+
+        <EditText
+            android:id="@+id/editTextEstilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEsportes"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Digite seu estilo de jogo"
+            android:textColorHint="@color/gold2"
+            android:inputType="textNoSuggestions"/>
+
+        <EditText
+            android:id="@+id/editTextBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEstilo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Digite seu bairro"
+            android:textColorHint="@color/gold2"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:id="@+id/editTextCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextBairro"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Digite sua cidade"
+            android:textColorHint="@color/gold2"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextCidade"
+            android:layout_alignStart="@id/editTextEmail"
+            android:layout_alignLeft="@id/editTextEmail"
+            android:textColor="@color/gold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Digite seu Usuario de login"
+            android:textColorHint="@color/gold2"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:id="@+id/editTextSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextUser"
+            android:layout_alignStart="@id/editTextEmail"
+            android:layout_alignLeft="@id/editTextEmail"
+            android:textColor="@color/gold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Digite sua senha"
+            android:textColorHint="@color/gold2"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextSenhaConf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextSenha"
+            android:layout_alignStart="@id/editTextSenha"
+            android:layout_alignLeft="@id/editTextSenha"
+            android:textColor="@color/gold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Confirme sua senha"
+            android:textColorHint="@color/gold2"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/ic_logo_round" />
+
+        <Button
+            android:id="@+id/btnCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editTextSenhaConf"
+            android:text="Cadastrar"
+            android:textColor="@color/gold2"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="@color/gold"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnCad"
+            android:text="Voltar ao login"
+            android:textColor="@color/gold2"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</ScrollView>

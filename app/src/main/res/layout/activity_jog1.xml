@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relativeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/lblNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColor="@color/gold"
+            android:hint="Pedro Alberto Gomes da Silva"
+            android:textSize="25dp"
+            android:textColorHint="@color/gold2"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/lblIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblNome"
+            android:textColor="@color/gold"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:ems="10"
+            android:hint="19 Anos"
+            android:textColorHint="@color/gold2"/>
+
+        <ImageView
+            android:id="@+id/imgJog1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lblIdade"/>
+
+        <TextView
+            android:id="@+id/lblEsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgJog1"
+            android:textColor="@color/gold"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:ems="10"
+            android:hint="Esportes:"
+            android:textColorHint="@color/gold2"/>
+
+        <Button
+            android:id="@+id/btnConv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/lblEsp"
+            android:text="Convidar"
+            android:textStyle="bold"
+            android:textColor="@color/gold2"
+            android:textSize="20sp"
+            android:backgroundTint="@color/gold"/>
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnConv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Voltar para os jogadores"
+            android:textColor="@color/gold2"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

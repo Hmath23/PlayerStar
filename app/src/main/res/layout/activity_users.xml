@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/relativeLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/lblJog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Jogadores"
+            android:textColor="@color/gold"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblJog"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imgJog1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/lblJog1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@id/imgJog1"
+                android:text="Gabriel"
+                android:textColor="@color/gold2"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/btnVis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/lblJog1"
+                android:backgroundTint="@color/gold"
+                android:text="Visualizar"
+                android:textColor="@color/gold2"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame1"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imgJog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lblJog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/imgJog2"
+            android:text="Pedro"
+            android:textColor="@color/gold2"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnVis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@+id/lblJog2"
+            android:backgroundTint="@color/gold"
+            android:text="Visualizar"
+            android:textColor="@color/gold2"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below = "@+id/relativeLogin"
+        android:backgroundTint="@color/gold"
+        android:layout_centerHorizontal="true"
+        android:text="Voltar"
+        android:textColor="@color/gold2"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>
